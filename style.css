@@ -1,0 +1,300 @@
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url(fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Vazir-Thin";
+  src: url(fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir-Thin.ttf);
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url(fonts/vazir-font-v16.1.0/vazir-font-v16.1.0/Vazir.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e96443;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #904e95, #e96443);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #904e95, #e96443);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 1100px;
+  height: 600px;
+  background-color: aliceblue;
+  margin-top: 150px;
+  margin-right: 430px;
+  border: 2px solid to right, #904e95, #e96443;
+  border-radius: 8px;
+}
+
+.player1 {
+  float: right;
+  width: 550px;
+  height: 600px;
+  background-color: #e5917c;
+  border: 2px solid, #4b2c4b, #92402c;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.player1 .player1Text {
+  font-family: "Vazir-Bold";
+  font-size: 30px;
+  margin-top: 70px;
+  margin-right: 210px;
+}
+
+.player1TotalPoint {
+  /* border: 2px solid black; */
+  text-align: center;
+  font-family: "Vazir-Thin";
+  font-size: 90px;
+  margin-top: 30px;
+  margin-right: 210px;
+  margin-left: 200px;
+  font-weight: 200;
+  color: #a30e4a;
+}
+
+.currentBox {
+  width: 190px;
+  height: 130px;
+  background-color: #a30e4a;
+  margin-top: 70px;
+  margin-right: 180px;
+  border-radius: 8px;
+}
+
+.Current {
+  color: white;
+  font-family: "Vazir";
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.pointPlayer1 {
+  color: white;
+  font-family: "Vazir";
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+  /* border: 2px solid black; */
+}
+
+/* .newGame {
+    display: none;
+}
+
+.rollDice {
+    display: none;
+}
+
+.changePlayer {
+    display: none;
+} */
+
+.player2 {
+  float: left;
+  width: 550px;
+  height: 600px;
+  background-color: rgb(189, 134, 177);
+  border: 2px solid, #4b2c4b, #92402c;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.player2 .player2Text {
+  font-family: "Vazir-Bold";
+  font-size: 30px;
+  margin-top: 70px;
+  margin-right: 210px;
+}
+
+.player2TotalPoint {
+  /* border: 2px solid black; */
+  text-align: center;
+  font-family: "Vazir-Thin";
+  font-size: 90px;
+  margin-top: 30px;
+  margin-right: 210px;
+  margin-left: 200px;
+  font-weight: 200;
+  color: #a30e4a;
+}
+
+.currentBox2 {
+  width: 190px;
+  height: 130px;
+  background-color: #a30e4a;
+  margin-top: 70px;
+  margin-right: 180px;
+  border-radius: 8px;
+}
+
+.Current2 {
+  color: white;
+  font-family: "Vazir";
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.pointPlayer2 {
+  color: white;
+  font-family: "Vazir";
+  font-size: 40px;
+  text-align: center;
+  padding-top: 10px;
+  /* border: 2px solid black; */
+}
+
+.newGame {
+  position: absolute;
+  float: right;
+  width: 190px;
+  height: 40px;
+  margin-top: 45px;
+  /* margin-left: 30px; */
+  margin-right: -90px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  font-family: "Vazir";
+  font-size: 20px;
+  box-shadow: 0px 1px 1px rgb(66, 66, 66);
+  text-align: center;
+}
+
+.image {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin-top: 180px;
+  margin-right: -45px;
+  border-radius: 10px;
+}
+
+/* #image1 {
+    display: none;
+}
+
+#image2 {
+    display: none;
+}
+
+#image3 {
+    display: none;
+}
+
+#image4 {
+    display: none;
+}
+
+#image5 {
+    display: none;
+}
+
+#image6 {
+    display: none;
+} */
+
+.newGame:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s ease-out;
+}
+
+.newGame:active {
+  background-color: rgb(172, 172, 174);
+  margin-top: 50px;
+}
+
+.rollDice {
+  position: absolute;
+  float: right;
+  width: 190px;
+  height: 40px;
+  margin-top: 350px;
+  /* margin-left: 30px; */
+  margin-right: -102px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  font-family: "Vazir";
+  font-size: 20px;
+  box-shadow: 0px 1px 1px rgb(66 66 66);
+  text-align: center;
+}
+
+.rollDice:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s ease-out;
+}
+
+.rollDice:active {
+  background-color: rgb(172, 172, 174);
+  margin-top: 355px;
+}
+
+.changePlayer {
+  position: absolute;
+  float: right;
+  width: 190px;
+  height: 40px;
+  margin-top: 420px;
+  /* margin-left: 30px; */
+  margin-right: -102px;
+  border-radius: 50px;
+  border: 2px solid transparent;
+  font-family: "Vazir";
+  font-size: 20px;
+  box-shadow: 0px 1px 1px rgb(66 66 66);
+  text-align: center;
+}
+
+.changePlayer:hover {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  transition: 0.7s ease-out;
+}
+
+.changePlayer:active {
+  background-color: rgb(172, 172, 174);
+  margin-top: 425px;
+}
+
+.player--winner {
+  background-color: #46b111;
+}
+
+.hidden {
+  display: none;
+}
+
+*/ .player--active {
+  background-color: rgba(197, 194, 194, 0.4);
+}
+
+.player--active .name {
+  font-weight: 700;
+}
+
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
